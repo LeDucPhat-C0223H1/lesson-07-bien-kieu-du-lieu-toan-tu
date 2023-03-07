@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khai Báo Và Sử Dụng Biến</title>
+</head>
+<body>
+    <P>Bài 1: Khai báo các biến thuộc các kiểu khác nhau, gán giá trị cho chúng và in ra tài liệu HTML.</P>
+    <script>
+        var i= 10;
+        var f= 20.5;
+        var b= true;
+        var s= "Hà Nội";
+
+        document.write('i = ' + i);
+        document.write('<br>');
+        document.write('f = ' + f);
+        document.write('<br>');
+        document.write('b = ' + b);
+        document.write('<br>');
+        document.write('s = ' + s);
+    </script>
+
+    <br><br>
+
+    <p>Bài 2: Viết một đoạn mã Javascript, khai báo biến width chứa giá trị độ rộng của hình chữ nhật, biến height chứa giá trị chiều cao của hình chữ nhật. In ra màn hình diện tích của hình chữ nhật đó.</p>
+    <script>
+        var width = 20;
+        var height = 10;
+        var area = width * height;
+        document.write('Area = ' + area);
+    </script>
+
+    <br><br>
+
+    <p>Bài 3: Dùng hàm prompt() để nhập 2 số từ bàn phím, lưu vào 2 biến là a và b. Kiểm tra xem a có phải là bội số của b hay không (tức là a có chia hết cho b hay không). Hiển thị kết quả ra màn hình bằng cách sử dụng hàm alert().</p>
+    <script>
+        a = prompt ("Nhập biến a: ");
+        b = prompt ("Nhập biến b: ");
+        if (a%b ==0) {
+            alert ("a chia het cho b");
+        }
+        else {
+            alert ("a không chia het cho b");
+        }
+    </script>
+</body>
+</html>

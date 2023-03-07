@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biến-Kiểu dữ liệu-Toán tử</title>
+</head>
+<body>
+    <p>Bài 1: Viết chương trình nhập điểm của một sinh viên cho các môn: Vật lý, Hóa học, và Sinh học. Sau đó hiển thị điểm trung bình và tổng của những điểm này.</p>
+    <script>
+    let inputDiemly;
+    let inputDiemhoa;
+    let inputDiemsinh;
+
+    inputDiemly = prompt ("Nhập điểm Vật lý:");
+    inputDiemhoa = prompt ("Nhập điểm Hóa học:");
+    inputDiemsinh = prompt ("Nhập điểm Sinh học:");
+
+    let Diemly = parseFloat(inputDiemly);
+    let Diemhoa = parseFloat(inputDiemhoa);
+    let Diemsinh = parseFloat(inputDiemsinh);
+
+    let average = (Diemly + Diemhoa + Diemsinh) / 3 ;
+    document.write ("Average =" + average);
+
+    </script>
+    <br><br>
+
+    <p>Bài 2:  Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit). [Hướng dẫn: C/5 = (F-32)/9]</p>
+    <script>
+        let inputCelsius;
+        
+        inputCelsius = prompt ("Nhập nhiệt độ C");
+
+        let C = parseFloat(inputCelsius);
+        document.write ("Giá trị độ C =" + C +" độ C");
+
+        document.write ("<br>" + "<br>");
+
+        let F = ((9 * C) / 5) +32;
+        document.write (" Kết quả độ F =" + F +" độ F");
+
+    </script>
+    <br><br>
+    
+    <p>Bài 3 + 4 : Viết chương trình tính chu vi và diện tích hình tròn</p>
+    <script>
+        let inputBankinh;
+        let pi = 3.14;
+        
+        inputBankinh = prompt ("Nhập bán kính hình tròn");
+
+        let R = parseFloat(inputBankinh);
+        document.write ("Bán kính R =" + R + "cm");
+
+        document.write ("<br>" + "<br>");
+
+        let P =  pi * 2 * R;
+        document.write (" Chu vi hình tròn P =" + P + "cm");
+
+        document.write ("<br>" + "<br>");
+
+        let S =  pi* R * R ;
+        document.write (" Diện tích hình tròn S =" + S + "cm2");
+
+    </script>
+    <br><br>
+
+</body>
+</html>

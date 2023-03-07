@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculater</title>
+</head>
+<body>
+    <h1>Caculator</h1>
+    <table cellspacing="10" >
+        <tr>
+            <td colspan="2"><input type="number" id="firstValue" placeholder="Nhập giá trị X"></td>
+            <td colspan="2"><input type="number" id="secondValue" placeholder="Nhập giá trị Y"></td>
+        </tr>
+
+        <tr>
+            <td style="width: 100px;">
+                <button type="button" onclick="Addition()">Addition(+)</button></td>
+
+            <td style="width: 120px;">
+                <button type="button" onclick="Subtraction()">Subtraction(-)</button></td>
+            
+            <td style="width: 130px;">  
+                <button type="button" onclick="Multiplication()">Multiplication(*)</button></td>
+            
+            <td>                        
+                <button type="button" onclick="Division()">Division(/)</button></td>
+        </tr>
+    </table>
+
+    <p id="Result">Result</p>
+
+    <script src="caculater.js"></script>
+</body>
+</html>

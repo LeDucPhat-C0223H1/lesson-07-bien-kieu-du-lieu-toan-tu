@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Change Money</title>
+</head>
+<body>
+    <table style="width: 100%;">
+        <tr>
+            <th style="width: 5%;"><label for="Amount">Amount</label></th>
+            <th><label for="FromCurrency">From Currency</label></th>
+            <th><label for="ToCurrency">To Currency</label></th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td><input type="number" id="Amount"></td>
+            
+            <td style="text-align: center;">
+                <select id="FromCurrency">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                </select>
+            </td>
+
+            <td style="text-align: center;">
+                <select id="ToCurrency">
+                    <option value="VND">VND</option>
+                    <option value="USD">USD</option>
+                </select>
+            </td>
+
+            <td>
+                <button type="button" onclick="ChangeMoney()">Convert</button>
+            </td>
+        </tr>
+    </table>
+
+    <p id="Result">Result:</p>
+
+    <script src="changemoney.js"></script>
+</body>
+</html>
